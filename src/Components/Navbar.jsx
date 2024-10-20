@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function BasicExample({props}) {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary bg-dark">
+    <Navbar expand="lg" className="bg-body-tertiary bg-dark mb-5">
       <Container>
         <Navbar.Brand>
           <h1 className="text-light">{props}</h1>
