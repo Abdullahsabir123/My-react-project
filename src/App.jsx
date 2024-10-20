@@ -13,7 +13,7 @@ export default function App() {
     <>
       <BasicExample props="Navbar" /> 
       <Routes>
-        <Route path="/" element={<Product />} />
+        <Route path="/product" element={<Product />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/category" element={<Category />} />
         <Route path="/signup" element={<SignUp />} />

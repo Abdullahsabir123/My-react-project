@@ -6,37 +6,36 @@ import { Link } from "react-router-dom";
 
 export default function Footer({props}) {
   return (
-    <>
-      <Navbar expand="lg" className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand href="#">
-            <h1>{props}</h1>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Link to="/category" className="nav-link">
-                <h5>Category</h5>
-              </Link>
-              <Link to="/" className="nav-link">
-                <h5>Product</h5>
-              </Link>
-              <Link to="/contact" className="nav-link">
-                <h5>Contact</h5>
-              </Link>
-            </Nav>
-            <Button variant="outline-success" className="mx-2">
-            <Link
-              to="/SignUp"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              SignUp
-            </Link>
-          </Button>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </>
+    <Navbar expand="lg" className="bg-body-tertiary">
+    <Container>
+      <Navbar.Brand>
+        <h1>{props}</h1>
+      </Navbar.Brand>
+
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto">
+          <Link to="/category" className="nav-link">
+            <h5>Category</h5>
+          </Link>
+          <Link to="/" className="nav-link">
+            <h5>Product</h5>
+          </Link>
+          <Link to="/contact" className="nav-link">
+            <h5>Contact</h5>
+          </Link>
+        </Nav>
+        <Button
+          as={Link}
+          to="/SignUp"
+          variant="outline-success"
+          className="mx-2"
+        >
+          SignUp
+        </Button>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
   );
 }
 

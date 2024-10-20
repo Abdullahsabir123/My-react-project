@@ -47,57 +47,61 @@ export default function SignUp() {
   }
 
   return (
-    <div className="container">
-      <div className="container">
-        <h2>Sign Up</h2>
-        <input 
+    <div className="container1">
+      <div className="container cont1 bg-success w-100 border border-2 border-solid border-dark">
+        <center>
+        <h2 className='text-light'>Sign Up</h2>
+        <input className='d-block mt-3'
           type="text" 
           id="1n" 
           value={name} 
           onChange={(e) => setName(e.target.value)} 
           placeholder="Enter Name" 
         />
-        <input 
+        <input className='d-block mt-3'
           type="text" 
           id="2n" 
           value={fname} 
           onChange={(e) => setFname(e.target.value)} 
           placeholder="Enter Father Name" 
         />
-        <input 
+        <input className='d-block mt-3'
           type="email" 
           id="Ema" 
           value={email} 
           onChange={(e) => setEmail(e.target.value)} 
           placeholder="Enter Email" 
         />
-        <input 
+        <input className='d-block mt-3'
           type="password" 
           id="Pw" 
           value={password} 
           onChange={(e) => setPassword(e.target.value)} 
           placeholder="Enter Password" 
         />
-        <button onClick={handleSignUp}>Sign Up</button>
+        <button onClick={handleSignUp} className='btn-outline-success mt-3 mb-3'>Sign Up</button>
+        </center>
       </div>
 
-      <div className="container">
-        <h2>Sign In</h2>
-        <input 
+      <div className="container mt-5 cont2 bg-success w-100 border border-2 border-solid border-dark">
+      <center>
+      <h2 className='text-light'>Sign In</h2>
+        <input className='d-block mt-3'
           type="email" 
           id="Em" 
           value={loginEmail} 
           onChange={(e) => setLoginEmail(e.target.value)} 
           placeholder="Enter Email" 
         />
-        <input 
+        <input className='d-block mt-3'
           type="password" 
           id="Pwd" 
           value={loginPassword} 
           onChange={(e) => setLoginPassword(e.target.value)} 
           placeholder="Enter Password" 
         />
-        <button onClick={handleSignIn}>Sign In</button>
+        <button onClick={handleSignIn} className='btn-outline-success mt-3 mb-3'>Sign In</button>
+      </center>
       </div>
     </div>
   );

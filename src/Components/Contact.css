@@ -23,7 +23,6 @@
 .ffbox1 {
     flex: 1;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .ffbox1 label {
@@ -86,9 +85,6 @@
     color: green;
 }
 
-.map-div {
-    background-color: rgb(152, 178, 234);
-}
 .text-2{
     border-bottom: 2px solid balck;
 }

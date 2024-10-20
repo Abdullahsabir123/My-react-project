@@ -8,7 +8,7 @@ function BasicExample({props}) {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand as={Link} to="/">
+        <Navbar.Brand>
           <h1>{props}</h1>
         </Navbar.Brand>
 
@@ -18,7 +18,7 @@ function BasicExample({props}) {
             <Link to="/category" className="nav-link">
               <h5>Category</h5>
             </Link>
-            <Link to="/" className="nav-link">
+            <Link to="/product" className="nav-link">
               <h5>Product</h5>
             </Link>
             <Link to="/contact" className="nav-link">
