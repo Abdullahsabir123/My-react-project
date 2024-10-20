@@ -11,7 +11,7 @@ export default function SignUp() {
   const [loginPassword, setLoginPassword] = useState('');
 
   useEffect(() => {
-    console.log(users);
+    console.log(users); 
   }, [users]);
 
   function handleSignUp() {
@@ -82,7 +82,6 @@ export default function SignUp() {
         <button onClick={handleSignUp} className='btn-outline-success mt-3 mb-3'>Sign Up</button>
         </center>
       </div>
-
       <div className="container mt-5 cont2 bg-success w-100 border border-2 border-solid border-dark">
       <center>
       <h2 className='text-light'>Sign In</h2>

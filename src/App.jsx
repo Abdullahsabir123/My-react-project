@@ -12,7 +12,7 @@ import Welcome from './Components/Welcome';
 export default function App() {
   return (
     <>
-      <BasicExample props="Navbar" /> 
+      <BasicExample props="E-com" /> 
       <Routes>
         <Route path="/" element={<Welcome/>} />
         <Route path="/product" element={<Product />} />
@@ -21,7 +21,7 @@ export default function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer props="Footer" />
+      <Footer props="E-com" />
     </>
   );
 }
