@@ -7,12 +7,14 @@ import Category from './Components/Category';
 import NotFound from './Components/NotFound';
 import Footer from './Components/Footer';
 import { Route, Routes } from 'react-router-dom';
+import Welcome from './Components/Welcome';
 
 export default function App() {
   return (
     <>
       <BasicExample props="Navbar" /> 
       <Routes>
+        <Route path="/" element={<Welcome/>} />
         <Route path="/product" element={<Product />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/category" element={<Category />} />

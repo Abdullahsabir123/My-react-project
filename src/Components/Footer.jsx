@@ -6,30 +6,30 @@ import { Link } from "react-router-dom";
 
 export default function Footer({props}) {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary bg-dark mt-5">
     <Container>
       <Navbar.Brand>
-        <h1>{props}</h1>
+        <h1 className="text-light">{props}</h1>
       </Navbar.Brand>
 
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
           <Link to="/category" className="nav-link">
-            <h5>Category</h5>
+            <h5 className="text-light">Category</h5>
           </Link>
           <Link to="/" className="nav-link">
-            <h5>Product</h5>
+            <h5 className="text-light">Product</h5>
           </Link>
           <Link to="/contact" className="nav-link">
-            <h5>Contact</h5>
+            <h5 className="text-light">Contact</h5>
           </Link>
         </Nav>
         <Button
           as={Link}
           to="/SignUp"
           variant="outline-success"
-          className="mx-2"
+          className="mx-2 bg-success text-light"
         >
           SignUp
         </Button>

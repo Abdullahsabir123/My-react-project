@@ -48,7 +48,7 @@ export default function SignUp() {
 
   return (
     <div className="container1">
-      <div className="container cont1 bg-success w-100 border border-2 border-solid border-dark">
+      <div className="container mt-5 cont1 bg-success w-100 border border-2 border-solid border-dark">
         <center>
         <h2 className='text-light'>Sign Up</h2>
         <input className='d-block mt-3'

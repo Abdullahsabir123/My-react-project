@@ -1,0 +1,14 @@
+.img1{
+    margin: auto;
+    height: 70vh;
+    width: 50vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.563),rgba(0, 0, 0, 0.415)), url(https://images.pexels.com/photos/810041/pexels-photo-810041.jpeg?auto=compress&cs=tinysrgb&w=600);
+    position: relative;
+}
+.pos{
+    position: relative;
+    top: 180px;
+    left: 200px;
+}
