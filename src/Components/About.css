@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container1{
+    width: 50%;
+}
+.text{
+    text-align: center;
+}
+.mar{
+    margin-top: 40px;
+}
+.container2{
+    width: 50%;
+}
+.mar1{
+    margin-top: 75px;
+}
+.btn{
+    width: 150px;
+    border:2px solid orange;
+    background-color: orange;
+    color: white;
+}
